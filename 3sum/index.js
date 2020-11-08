@@ -6,7 +6,7 @@ const threeSum = (arr) => {
   for (let i = 0; i < sa.length; i++) {
     let j = i + 1;
     let k = sa.length - 1;
-    if (i > 0 && sa[i] == sa[i - 1]) continue;
+    if (i > 0 && sa[i] === sa[i - 1]) continue;
     while (j < k) {
       if (k < sa.length - 1 && sa[k] == sa[k + 1]) {
         k--;
