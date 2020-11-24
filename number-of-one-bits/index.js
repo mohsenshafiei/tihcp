@@ -1,5 +1,6 @@
+const str = "00000000000000000000000000001011";
 
-const x = (n) => {
+const hammingWeight = (n) => {
   let bits = 0;
   let mask = 1;
   for (let i = 0; i < 32; i++) {
@@ -8,3 +9,5 @@ const x = (n) => {
   }
   return bits;
 };
+
+console.log(hammingWeight(str));
