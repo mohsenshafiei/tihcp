@@ -29,6 +29,7 @@ const isValidParentheses = (str) => {
       stack.pop();
       continue;
     }
+    if (isCloseParenthes(str[i]) && !isMatch(head, str[i])) return false;
     if (isOpenParenthes(str[i])) stack.push(str[i]);
   }
   if (isEmpty(stack)) return true;
